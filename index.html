@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and mobile scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Fonts: preconnect speeds up Google Fonts, then loads Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared visual styles for this page and the JSX version -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Overlay label so you can tell this is the static HTML page -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Row that holds all pricing cards side by side -->
     <div class="cards-container">
+
+        <!-- Hobby card: free plan, secondary button -->
         <div class="card">
+            <!-- Top block: title, price, and feature list (button sits below) -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
@@ -36,12 +47,16 @@
                     </ul>
                 </div>
             </div>
+            <!-- secondary = light gray fill (see styles.css) -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro card: paid plan, primary button -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
+                    <!-- Amount and period are split so they can be styled independently -->
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
@@ -67,8 +82,10 @@
                     </ul>
                 </div>
             </div>
+            <!-- primary = dark fill, white text -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
     </div>
 </body>
 </html>
