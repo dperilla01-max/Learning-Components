@@ -1,9 +1,11 @@
+/* Reset — strip browser defaults so spacing is consistent */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page — center the cards on a warm off-white canvas */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Card row — cards sit in a single horizontal line */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Card shell — fixed width, stacked content, button pinned to the bottom */
 .card {
     display: flex;
     flex-direction: column;
@@ -39,6 +43,7 @@ body {
     flex-direction: column;
 }
 
+/* Plan name */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +52,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row — amount and "/mo." sit on the same baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -69,12 +75,14 @@ body {
     margin-bottom: 32px;
 }
 
+/* Lead-in above the feature list, e.g. "Includes:" */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list — custom checkmarks instead of default bullets */
 .features-list {
     list-style: none;
     padding: 0;
@@ -95,6 +103,7 @@ body {
     font-weight: 400;
 }
 
+/* Button base — pill shape; margin-top: auto keeps it at the card footer */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +126,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Variant: primary — high-emphasis CTA (Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -130,6 +140,7 @@ body {
     background-color: #333;
 }
 
+/* Variant: tertiary — outlined, unused on this page but available */
 .download-button.tertiary {
     background-color: #fff;
     color: #07689c;
@@ -144,6 +155,7 @@ body {
     background-color: #f2f1ed;
 }
 
+/* Page badge — fixed overlay that names which version you are viewing */
 .page-label {
     position: fixed;
     top: 16px;
