@@ -142,9 +142,9 @@ body {
 
 /* Variant: tertiary — outlined, unused on this page but available */
 .download-button.tertiary {
-    background-color: #fff;
-    color: #07689c;
-    border: 1px solid #07689c;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #a7a7a8;
 }
 
 .download-button.tertiary:hover {
